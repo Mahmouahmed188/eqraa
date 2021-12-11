@@ -1,0 +1,33 @@
+%button {
+  text-align: center;
+  margin: 10px;
+  padding: 12px 40px;
+  border-radius: 20px;
+  color: $colorg;
+  cursor: pointer;
+  transition: 0.3s;
+}
+%hover-but {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  cursor: pointer;
+}
+%hover-but-p {
+  background-color: $button-color;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.toggle-menu {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  float: left;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  display: none !important;
+
+  @media #{$maxMobile} {
+    display: block !important;
+  }
+}

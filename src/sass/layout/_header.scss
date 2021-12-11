@@ -1,0 +1,174 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  .full-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      height: 35px;
+      margin-top: 7px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .logo {
+      display: flex;
+      flex-direction: row;
+      float: right;
+      justify-content: space-between;
+      .main {
+        margin: auto 20px;
+        @media #{$maxMobile} {
+          display: none;
+        }
+      }
+      .cors {
+        margin: auto 20px;
+        @media #{$maxMobile} {
+          display: none;
+        }
+      }
+    }
+    .mob-menu {
+      display: none;
+      float: none;
+      flex-direction: column;
+      background-color: rgb(66, 81, 104);
+      width: 208px;
+      position: absolute;
+      top: 40px;
+      left: 29px;
+      padding: 25px;
+      @include prefixer(
+        box-shadow,
+        (
+          rgba(0, 1, 44, 0.556) 0px 2px 4px 0px,
+          rgba(0, 14, 65, 0.371) 0px 2px 16px 0px
+        ),
+        webkit moz o ms
+      );
+      .log-me {
+        display: flex;
+      }
+      h4 {
+        cursor: pointer;
+      }
+    }
+    .navbar {
+      float: left;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      display: blok !important;
+      @media #{$maxMobile} {
+        display: none;
+      }
+      .lang {
+        cursor: pointer;
+        margin-left: 19px;
+      }
+      .lang::before {
+        content: "";
+        border-width: 6px;
+        border-style: solid;
+        position: relative;
+        right: 75px;
+        top: 14px;
+        border-color: #fff transparent transparent transparent;
+        @media #{$maxMobile} {
+          right: 79px;
+          top: 14px;
+        }
+      }
+      .sign-up {
+        background-color: $button-color;
+        border: solid 1px $button-color;
+        @extend %button;
+        &:hover {
+          color: #fff;
+          border: solid 1px #fff;
+          @extend %hover-but;
+        }
+      }
+      .sign-in {
+        border: solid 1px #fff;
+        background-color: rgba(206, 107, 107, 0);
+        margin: 10px;
+        padding: 12px 40px;
+        border-radius: 20px;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.land {
+  z-index: 0;
+  min-height: 100vh;
+  background-color: #1726354a;
+  // background-image: url("@/public/assets/img/box/Web.png");
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  @include overlay;
+  .cont {
+    position: absolute;
+    top: 10%;
+    width: inherit;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    .search {
+      .searchTerm {
+        width: 450px;
+        border: none;
+        padding: 5px;
+        height: 35px;
+        border-radius: 5px;
+        outline: none;
+        color: #9dbfaf;
+        @media #{$maxMobile} {
+          margin: 20px 0;
+          width: 80%;
+        }
+      }
+      .link-d {
+        width: 88%;
+        display: flex;
+        justify-content: center;
+        @media #{$maxMobile} {
+          display: none;
+        }
+        .links-sh {
+          display: inline-flex;
+          list-style: none;
+          li {
+            padding-left: 10px;
+            a {
+              font-size: 13px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .button-dev {
+      display: flex;
+      justify-content: center;
+      .button-head {
+        width: 200px;
+        background-color: $button-color;
+        border: solid 1px $button-color;
+        @extend %button;
+        &:hover {
+          color: #fff;
+          border: solid 1px #fff;
+          @extend %hover-but;
+        }
+      }
+    }
+  }
+}
