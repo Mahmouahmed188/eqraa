@@ -4,14 +4,22 @@
       <i class="fas fa-bars toggle-menu"></i>
       <div class="mob-menu">
         <i href="" class="log-me"
-          ><img src="img/png/2.png" alt="" class="logo-img" />
+          ><img
+            src="../../../public/assets/img/png/2.png"
+            alt=""
+            class="logo-img"
+          />
           <h5>اكادمية اقرا</h5></i
         >
-        <h4 class="main"><i class="fas fa-home fab"> </i> الرئيسية</h4>
-        <h4 class="cors">
-          <i class="fas fa-graduation-cap"></i> الكورسات المتاحة
-          <i class="fas fa-angle-right"></i>
+        <h4 class="main">
+          <i class="fas fa-home fab"> </i>
+          <router-link to="/Home"> الرئيسية</router-link>
         </h4>
+
+        <h4 class="cors">
+          <router-link to="/AvailableCourses"> الكورسات المتاحة</router-link>
+        </h4>
+
         <h4 class="lang">
           <i class="fas fa-language"></i> اللغة العربية
           <i class="fas fa-angle-right"></i>
@@ -20,9 +28,16 @@
         <h4 class="sign-in"><i class="fas fa-sign-in-alt"></i> دخول</h4>
       </div>
       <div class="logo">
-        <i href=""><img src="img/png/2.png" alt="" class="logo-img" /></i>
-        <p class="main">الرئيسية</p>
-        <p class="cors">الكورسات المتاحة</p>
+        <i href=""
+          ><img
+            src="../../../public/assets/img/png/2.png"
+            alt=""
+            class="logo-img"
+        /></i>
+        <p class="main"><router-link to="/Home"> الرئيسية</router-link></p>
+        <p class="cors">
+          <router-link to="/AvailableCourses"> الكورسات المتاحة</router-link>
+        </p>
       </div>
       <div class="navbar">
         <div class="lang">{{ language }}</div>
@@ -35,7 +50,7 @@
 
 <script>
 export default {
-  name: "header",
+  name: "AppHeader",
   props: {
     msg: String,
   },

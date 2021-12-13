@@ -30,9 +30,6 @@
 <script>
 export default {
   name: "landHeader",
-  props: {
-    msg: String,
-  },
   data() {
     return {};
   },
@@ -44,7 +41,7 @@ export default {
   z-index: 0;
   min-height: 100vh;
   background-color: #1726354a;
-  // background-image: url(../public/img/box/Web.png);
+  background-image: url(../../../../public/assets/img/box/Web.png);
   background-size: cover;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);

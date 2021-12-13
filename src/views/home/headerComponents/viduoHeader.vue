@@ -1,8 +1,13 @@
 <template>
   <div class="viduo">
-    <img class="puss" src="img/box/Group 4893.png" alt="" />
+    <img
+      class="puss"
+      src="../../../../public/assets/img/box/Group4893.png"
+      alt=""
+    />
   </div>
 </template>
+
 <script>
 export default {
   name: "viduoHeader",
@@ -14,10 +19,12 @@ export default {
   },
 };
 </script>
+
 <style scoped lang="scss">
 .viduo {
   height: 400px;
   width: 600px;
+  background-image: url(../../../../public/assets/img/box/Group4945.png);
   background-color: #00285d;
   background-position: 49% 80%;
   margin: 453px auto 0;

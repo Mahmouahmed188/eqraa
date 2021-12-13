@@ -7,7 +7,9 @@
     <div class="read-d">
       <div class="animation">
         <div class="card">
-          <div class="img"><img src="img/box/Group 4936.png" alt="" /></div>
+          <div class="img">
+            <img src="../../../public/assets/img/box/Group4936.png" alt="" />
+          </div>
           <p>الناس على جاهدين للقضاء على ضعف الانتماء للوعي اللغوي</p>
           <p>
             نشر اللغه التي اضافها الله وحفظ على هويتها العربيه الناس علل تعلم
@@ -17,7 +19,9 @@
       </div>
       <div class="animation">
         <div class="card">
-          <div class="img"><img src="img/box/Group 4934.png" alt="" /></div>
+          <div class="img">
+            <img src="../../../public/assets/img/box/Group4934.png" alt="" />
+          </div>
           <p>الناس على جاهدين للقضاء على ضعف الانتماء للوعي اللغوي</p>
           <p>
             نشر اللغه التي اضافها الله وحفظ على هويتها العربيه الناس علل تعلم
@@ -27,7 +31,9 @@
       </div>
       <div class="animation">
         <div class="card">
-          <div class="img"><img src="img/box/Group 4935.png" alt="" /></div>
+          <div class="img">
+            <img src="../../../public/assets/img/box/Group4935.png" alt="" />
+          </div>
           <p>الناس على جاهدين للقضاء على ضعف الانتماء للوعي اللغوي</p>
           <p>
             نشر اللغه التي اضافها الله وحفظ على هويتها العربيه الناس علل تعلم

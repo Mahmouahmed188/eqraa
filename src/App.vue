@@ -1,31 +1,20 @@
 <template>
-  <div class="home">
-    <nav-header msg="Welcome to Your Vue.js App" />
-    <land-header msg="Welcome to Your Vue.js App" />
-    <br />
-    <viduoHeader msg="Welcome to Your Vue.js App" />
-    <bodyRead msg="Welcome to Your Vue.js App" />
-    <div class="clearfix"></div>
-    <br />
-    <corsess msg="Welcome to Your Vue.js App" />
+  <div id="app">
+    <app-header />
+    <router-view />
+    <app-footer />
   </div>
 </template>
 
 <script>
-import navHeader from "@/components/navHeader.vue";
-import landHeader from "@/components/landHeader.vue";
-import viduoHeader from "@/components/viduoHeader.vue";
-import bodyRead from "@/components/bodyRead.vue";
-import corsess from "@/components/corsess.vue";
+import AppHeader from "@/components/global/AppHeader.vue";
+import AppFooter from "@/components/global/AppFooter.vue";
 
 export default {
   name: "Home",
   components: {
-    navHeader,
-    landHeader,
-    viduoHeader,
-    bodyRead,
-    corsess,
+    AppHeader,
+    AppFooter,
   },
   created() {
     let htmlEl = document.querySelector("html");
