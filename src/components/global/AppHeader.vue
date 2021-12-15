@@ -34,9 +34,13 @@
             alt=""
             class="logo-img"
         /></i>
-        <p class="main"><router-link to="/Home"> الرئيسية</router-link></p>
+        <p class="main">
+          <router-link class="home-link" to="/Home"> الرئيسية</router-link>
+        </p>
         <p class="cors">
-          <router-link to="/AvailableCourses"> الكورسات المتاحة</router-link>
+          <router-link class="cors-link" to="/AvailableCourses">
+            الكورسات المتاحة</router-link
+          >
         </p>
       </div>
       <div class="navbar">
@@ -51,9 +55,10 @@
 <script>
 export default {
   name: "AppHeader",
-  props: {
-    msg: String,
-  },
+  // showLogo: {
+  //   type: Boolean,
+  //   default: true,
+  // },
   data() {
     return {
       language: "اللغة العربية",
@@ -65,7 +70,7 @@ export default {
 
 <style scoped lang="scss">
 header {
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1;
   color: #fff;
@@ -85,16 +90,23 @@ header {
       flex-direction: row;
       float: right;
       justify-content: space-between;
+
       .main {
         margin: auto 20px;
         @media (max-width: 767px) {
           display: none;
+        }
+        .home-link {
+          color: #fff;
         }
       }
       .cors {
         margin: auto 20px;
         @media (max-width: 767px) {
           display: none;
+        }
+        .cors-link {
+          color: #fff;
         }
       }
     }
@@ -134,8 +146,8 @@ header {
         border-width: 6px;
         border-style: solid;
         position: relative;
-        right: 75px;
-        top: 14px;
+        right: 93px;
+        top: 20px;
         border-color: #fff transparent transparent transparent;
         @media (max-width: 767px) {
           right: 79px;

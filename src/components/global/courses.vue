@@ -2,7 +2,7 @@
   <div>
     <div class="courses">
       <div class="container">
-        <div class="text-li">
+        <!-- <div class="text-li">
           <h1 class="line">تعرف علي الدورات المقدمة</h1>
         </div>
         <div class="slaid">
@@ -12,7 +12,7 @@
           <div class="l">
             <button class="button-show">عرض الكل</button>
           </div>
-        </div>
+        </div> 
         <br />
         <div style="display: flex; justify-content: space-between">
           <div class="elshi" v-for="cors in courses" :key="cors.id">
@@ -40,7 +40,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
     <div class="courses">
