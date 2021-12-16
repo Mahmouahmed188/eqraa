@@ -2,7 +2,7 @@
   <div>
     <div class="courses">
       <div class="container">
-        <!-- <div class="text-li">
+        <div class="text-li">
           <h1 class="line">تعرف علي الدورات المقدمة</h1>
         </div>
         <div class="slaid">
@@ -12,11 +12,11 @@
           <div class="l">
             <button class="button-show">عرض الكل</button>
           </div>
-        </div> 
+        </div>
         <br />
         <div style="display: flex; justify-content: space-between">
-          <div class="elshi" v-for="cors in courses" :key="cors.id">
-            <div class="plan">
+          <div class="elshi">
+            <div class="plan" v-for="cors in courses" :key="cors.id">
               <div class="head-1">
                 <p>
                   {{ cors.name }}
@@ -40,7 +40,7 @@
               </div>
             </div>
           </div>
-        </div>-->
+        </div>
       </div>
     </div>
     <div class="courses">
@@ -195,7 +195,7 @@ export default {
       flex-wrap: wrap;
     }
     .plan {
-      // width: 30%;
+      width: 30%;
       background-color: #fff;
       border: solid 1px #ccc;
       border-radius: 5px;

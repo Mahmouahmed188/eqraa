@@ -5,14 +5,20 @@
         class="component"
         style="display: flex; justify-content: space-between"
       >
-        <div class="elshi" v-for="cors in courses" :key="cors.id">
+        <div class="elshi" v-for="cors in data" :key="cors.id">
           <div class="plan">
-            <div class="head-1">
+            <div
+              class="head-1"
+              v-bind:style="{ 'background-image': 'url(' + cors.cover + ')' }"
+            >
               <p>
                 {{ cors.name }}
               </p>
               <p>{{ cors.language }}</p>
               <img src="" alt="" class="daa" />
+              <div class="action" :style="`background-color:${cors.color}`">
+                {{ cors.action }}
+              </div>
             </div>
             <div class="body-plan">
               <h3>{{ cors.nol }}</h3>
@@ -36,16 +42,9 @@
   </div>
 </template>
 <script>
-import dataCors from "../../json/courses.json";
-
 export default {
-  props: ["id", "name", "language", "nol"],
+  props: ["id", "name", "language", "nol", "color", "data"],
   name: "courseContent",
-  data() {
-    return {
-      courses: dataCors,
-    };
-  },
 };
 </script>
 <style lang="scss">
@@ -56,13 +55,13 @@ export default {
   .component {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
+    margin-left: -20px;
     .elshi {
-      padding-left: 15px;
+      padding-left: 20px;
       width: 33.3333333333%;
-      padding-bottom: 13px;
+      padding-bottom: 40px;
       @media (max-width: 767px) {
-        flex-wrap: wrap;
+        width: 100%;
       }
       .plan {
         background-color: #fff;
@@ -83,8 +82,16 @@ export default {
           overflow: auto;
         }
         .head-1 {
-          background-image: url(../../../public/assets/img/images.jpeg);
           @extend %head;
+          .action {
+            position: relative;
+            top: 60px;
+            background-color: red;
+            width: 60px;
+            text-align: center;
+            padding: 7px;
+            margin-right: 5px;
+          }
         }
         .body-plan {
           text-align: center;
@@ -103,7 +110,6 @@ export default {
                 transform: scale(1.3);
               }
             }
-
             .s1:hover ~ a {
               color: gold;
             }
@@ -135,7 +141,6 @@ export default {
       }
     }
     .read_more {
-     
     }
   }
 }

@@ -35,12 +35,14 @@
         <img src="" alt="" />
       </div>
       <div class="logo">
-        <i href=""
-          ><img
-            src="../../../public/assets/img/png/4.png"
-            alt=""
-            class="logo-img"
-        /></i>
+        <router-link class="home-link" to="/Home">
+          <i href=""
+            ><img
+              src="../../../public/assets/img/png/4.png"
+              alt=""
+              class="logo-img"
+          /></i>
+        </router-link>
       </div>
     </nav>
   </div>
@@ -59,6 +61,7 @@ export default {
 
 <style lang="scss">
 .header1 {
+  z-index: 1;
   position: sticky;
   top: 0px;
   padding: 10px;

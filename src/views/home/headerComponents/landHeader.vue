@@ -59,7 +59,7 @@ export default {
     text-align: center;
     .search {
       .searchTerm {
-        width: 450px;
+        width: 496px;
         border: none;
         padding: 5px;
         height: 35px;
