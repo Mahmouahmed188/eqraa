@@ -3,17 +3,17 @@
     <nav class="container full-width">
       <i class="fas fa-bars toggle-menu"></i>
       <div class="mob-menu">
-        <i href="" class="log-me"
-          ><img
-            src="../../../public/assets/img/png/2.png"
+        <i href="" class="log-me">
+          <img
+            src="../../../../public/assets/img/png/2.png"
             alt=""
             class="logo-img"
           />
-          <h5>اكادمية اقرا</h5></i
-        >
+          <h5>اكادمية اقرا</h5>
+        </i>
         <h4 class="main">
           <i class="fas fa-home fab"> </i>
-          <router-link to="/Home"> الرئيسية</router-link>
+          <router-link to="/"> الرئيسية</router-link>
         </h4>
 
         <h4 class="cors">
@@ -30,12 +30,12 @@
       <div class="logo">
         <i href=""
           ><img
-            src="../../../public/assets/img/png/2.png"
+            src="../../../../public/assets/img/png/2.png"
             alt=""
             class="logo-img"
         /></i>
         <p class="main">
-          <router-link class="home-link" to="/Home"> الرئيسية</router-link>
+          <router-link class="home-link" to="/"> الرئيسية</router-link>
         </p>
         <p class="cors">
           <router-link class="cors-link" to="/AvailableCourses">

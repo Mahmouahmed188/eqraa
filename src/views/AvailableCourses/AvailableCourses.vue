@@ -12,12 +12,11 @@
 <script>
 import dataCors from "../../json/courseContent.json";
 
-import coursHeader from "@/components/global/coursHeader.vue";
+import coursHeader from "@/components/global/header/coursHeader.vue";
 import navHeader from "@/views/AvailableCourses/header/navHeader.vue";
 import filterCourse from "@/views/AvailableCourses/header/filterCourse.vue";
-import courseContent from "@/views/AvailableCourses/courseContent.vue";
+import courseContent from "@/components/global/courseContent.vue";
 import AppFooter from "@/components/global/AppFooter.vue";
-// import popup from "@/views/arabic/popup.vue";
 
 export default {
   name: "AvailableCourses",

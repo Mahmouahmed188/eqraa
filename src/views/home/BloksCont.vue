@@ -47,7 +47,9 @@
               - لدينا مسارات تعليميه توضح لك الطريق من البدايه الى النهايه
             </li>
           </ul>
-          <button class="button-blok">الدورات المتاحه</button>
+          <router-link class="cors-link" to="/AvailableCourses">
+            <button class="button-blok">الدورات المتاحه</button>
+          </router-link>
         </div>
       </div>
     </div>

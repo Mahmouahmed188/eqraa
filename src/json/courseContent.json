@@ -89,7 +89,7 @@
         "language": "اللغه العربيه",
         "nol": "استخدام الاسماء الخمسه في حالات الاعراب الثلاثه",
         "views": "93",
-        "cover": "../public/assets/img/images.jpeg",
+        "cover": "../../public/assets/img/images.jpeg",
         "color": "#0acaa1",
         "action": "لم تبدأ",
         "time": "14:20:00"
@@ -115,7 +115,7 @@
         "nol": "استخدام الاسماء الخمسه في حالات الاعراب الثلاثه",
         "views": "187",
         "cover": "../../public/assets/img/images.jpeg",
-        "color": "red",
+        "color": "#0acaa1",
         "action": "لم تبدأ",
         "time": "04:30:00"
     },
@@ -125,8 +125,8 @@
         "language": "اللغه العربيه",
         "nol": "استخدام الاسماء الخمسه في حالات الاعراب الثلاثه",
         "views": "93",
-        "cover": "../public/assets/img/images.jpeg",
-        "color": "red",
+        "cover": "../../public/assets/img/images.jpeg",
+        "color": "#0acaa1",
         "action": "لم تبدأ",
         "time": "14:20:00"
 
@@ -138,7 +138,7 @@
         "language": "اللغه العربيه",
         "nol": "استخدام الاسماء الخمسه في حالات الاعراب الثلاثه",
         "views": "83",
-        "cover": "../public/public/assets/img/images.jpeg",
+        "cover": "../../public/assets/img/images.jpeg",
         "color": "red",
         "action": "انتهت",
         "time": "03:53:00"

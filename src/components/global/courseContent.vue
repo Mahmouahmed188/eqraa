@@ -11,17 +11,19 @@
               class="head-1"
               v-bind:style="{ 'background-image': 'url(' + cors.cover + ')' }"
             >
-              <p>
+              <p class="padding">
                 {{ cors.name }}
               </p>
-              <p>{{ cors.language }}</p>
+              <p class="padding">{{ cors.language }}</p>
               <img src="" alt="" class="daa" />
               <div class="action" :style="`background-color:${cors.color}`">
                 {{ cors.action }}
               </div>
             </div>
             <div class="body-plan">
-              <h3>{{ cors.nol }}</h3>
+              <router-link class="" to="/arabic">
+                <h3 class="color-link">{{ cors.nol }}</h3>
+              </router-link>
               <div class="star">
                 <a href="#" class="fas fa-star s1"></a>
                 <a href="#" class="fas fa-star s2"></a>
@@ -36,6 +38,7 @@
             </div>
           </div>
         </div>
+
         <div class="read_more">عرض المزيد</div>
       </div>
     </div>
@@ -90,7 +93,11 @@ export default {
             width: 60px;
             text-align: center;
             padding: 7px;
-            margin-right: 5px;
+            margin-right: 10px;
+            border-radius: 3px;
+          }
+          .padding {
+            padding-right: 10px;
           }
         }
         .body-plan {
@@ -125,6 +132,10 @@ export default {
             .s5:hover ~ a {
               color: gold;
             }
+          }
+          .color-link {
+            color: #1d1d1d;
+            
           }
         }
         .foot {

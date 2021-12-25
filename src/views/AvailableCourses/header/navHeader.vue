@@ -3,7 +3,7 @@
     <div class="container">
       <div class="link_home">
         <div class="home">
-          <router-link class="home-link" to="/Home"> {{ home }} </router-link>
+          <router-link class="home-link" to="/"> {{ home }} </router-link>
           >
           <router-link class="cors-link" to="/AvailableCourses">
             {{ courses }}

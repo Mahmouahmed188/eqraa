@@ -9,13 +9,14 @@
     <courses />
     <icon-color />
     <bloks-cont />
+    <!-- <popup /> -->
     <app-footer />
   </div>
 </template>
 
 <script>
 // import navHeader from "@/components/navHeader.vue";
-import AppHeader from "@/components/global/AppHeader.vue";
+import AppHeader from "@/components/global/header/AppHeader.vue";
 import landHeader from "@/views/home/headerComponents/landHeader.vue";
 import viduoHeader from "@/views/home/headerComponents/viduoHeader.vue";
 import bodyRead from "@/views/home/bodyRead.vue";
@@ -23,6 +24,7 @@ import courses from "@/components/global/courses.vue";
 import IconColor from "@/views/home/IconColor.vue";
 import BloksCont from "@/views/home/BloksCont.vue";
 import AppFooter from "@/components/global/AppFooter.vue";
+// import popup from "@/views/popup/popup.vue";
 
 export default {
   name: "Home",
@@ -35,6 +37,7 @@ export default {
     courses,
     IconColor,
     BloksCont,
+    // popup,
   },
   created() {
     let htmlEl = document.querySelector("html");
