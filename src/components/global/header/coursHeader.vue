@@ -29,10 +29,10 @@
           {{ name }}
         </div>
       </div>
-      <div>
+      <!-- <div>
         <font-awesome-icon icon="fa-solid fa-bell" />
-        <i class="fa-solid fa-bell"></i> 
-     
+        <i class="fa-solid fa-bell"></i>
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -80,7 +80,7 @@
           ></path>
         </svg>
         <i class="far fa-bookmark"></i>
-      </div>
+      </div> -->
       <div class="logo">
         <router-link class="home-link" to="/">
           <i href=""
@@ -108,7 +108,7 @@ export default {
 
 <style lang="scss">
 .header1 {
-  z-index: 1;
+  z-index: 101;
   position: sticky;
   top: 0px;
   padding: 10px;

@@ -21,7 +21,7 @@
               </div>
             </div>
             <div class="body-plan">
-              <router-link class="" to="/arabic">
+              <router-link class="non" to="/arabic">
                 <h3 class="color-link">{{ cors.nol }}</h3>
               </router-link>
               <div class="star">
@@ -38,9 +38,8 @@
             </div>
           </div>
         </div>
-
-        <div class="read_more">عرض المزيد</div>
       </div>
+      <div class="read_more">عرض المزيد</div>
     </div>
   </div>
 </template>
@@ -103,6 +102,9 @@ export default {
         .body-plan {
           text-align: center;
           padding: 30px;
+          .non {
+            text-decoration: none;
+          }
           .star {
             text-align: center;
             direction: rtl;
@@ -135,7 +137,6 @@ export default {
           }
           .color-link {
             color: #1d1d1d;
-            
           }
         }
         .foot {
@@ -151,8 +152,12 @@ export default {
         }
       }
     }
-    .read_more {
-    }
+  }
+  .read_more {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
   }
 }
 </style>

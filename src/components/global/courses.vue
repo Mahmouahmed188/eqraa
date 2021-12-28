@@ -82,10 +82,13 @@
               <p><span> </span> اللغه العربيه</p>
               <img src="" alt="" class="daa" />
             </div>
+            
             <div class="body-plan">
               <h3>استخدام الاسماء الخمسه في حالات الاعراب الثلاثه</h3>
               <div class="star">
-                <a href="#" class="fas fa-star s1"></a>
+            
+                <a href="#" class="fas fa-star"></a>
+               
                 <a href="#" class="fas fa-star s2"></a>
                 <a href="#" class="fas fa-star s3"></a>
                 <a href="#" class="fas fa-star s4"></a>
