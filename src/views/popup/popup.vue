@@ -2,7 +2,7 @@
   <div id="myModal" class="popup-overlay">
     <div>
       <div class="container all">
-        <button id="myBtn" class="close view-modal" @btn-click="closeClick">
+        <button id="myBtn" class="close view-modal" @click.prevent="closeClick">
           &times;
         </button>
         <div class="popup">
@@ -34,6 +34,13 @@
                 <div class="link">
                   <p>مرفقاتار يرجى اختيار الملفات من جهازك png .jpg .pdf</p>
                   <a href="" class="ubl">رفع الملف</a>
+                  <input type="file" @change="handleFileUpload" />
+                  <img
+                    v-for="(file, index) in selectedFiles"
+                    :key="index"
+                    :src="file"
+                    style="width: 120px; height: 120px"
+                  />
                 </div>
               </div>
               <div class="upload-drop">
@@ -122,30 +129,40 @@
 <script>
 export default {
   name: "popup",
-  mounted() {
-    var modal = document.getElementById("myModal");
-
-    var btn = document.getElementById("myBtn");
-
-    var span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function () {
-      modal.style.display = "block";
-    };
-
-    span.onclick = function () {
-      modal.style.display = "none";
-      modal.style.background = "rgba(0, 0, 0, 0)";
-    };
-
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
+  data() {
+    return {
+      selectedFiles: [],
     };
   },
-  closeClick() {
-    this.$emit("btn-click");
+  // mounted() {
+  //   var modal = document.getElementById("myModal");
+
+  //   var btn = document.getElementById("myBtn");
+
+  //   var span = document.getElementsByClassName("close")[0];
+
+  //   btn.onclick = function () {
+  //     modal.style.display = "block";
+  //   };
+
+  //   span.onclick = function () {
+  //     modal.style.display = "none";
+  //     modal.style.background = "rgba(0, 0, 0, 0)";
+  //   };
+
+  //   window.onclick = function (event) {
+  //     if (event.target == modal) {
+  //       modal.style.display = "none";
+  //     }
+  //   };
+  // },
+  methods: {
+    closeClick() {
+      this.$emit("btn-click");
+    },
+    handleFileUpload(e) {
+      this.selectedFiles.push(URL.createObjectURL(e.target.files[0]));
+    },
   },
 };
 // document.querySelector(".view-modal").onclick = () => {

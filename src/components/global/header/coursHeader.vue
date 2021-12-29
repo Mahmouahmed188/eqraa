@@ -1,8 +1,8 @@
 <template>
   <div class="header1">
     <nav class="container full-width">
-      <i class="fas fa-bars toggle-menu"></i>
-      <div class="mob-menu">
+      <i class="fas fa-bars toggle-menu" @click="show = !show"></i>
+      <div class="mob-menu" v-if="show">
         <i href="" class="log-me"
           ><img src="img/png/2.png" alt="" class="logo-img" />
           <h5>اكادمية اقرا</h5></i
@@ -101,6 +101,7 @@ export default {
   data() {
     return {
       name: "mahmoud",
+      show: false,
     };
   },
 };

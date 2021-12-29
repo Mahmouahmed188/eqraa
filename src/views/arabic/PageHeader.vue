@@ -121,32 +121,42 @@
                   <div class="hour">5:30 م</div>
                 </div>
                 <div class="week">
-                  <div class="day"><span>السبت</span> <span>5 يناير</span></div>
+                  <div class="day"><span>الاحد</span> <span>6 يناير</span></div>
                   <div class="hour">5:30 م</div>
                   <div class="hour">5:30 م</div>
                 </div>
                 <div class="week">
-                  <div class="day"><span>السبت</span> <span>5 يناير</span></div>
+                  <div class="day">
+                    <span>الاثنين</span> <span>7 يناير</span>
+                  </div>
                   <div class="hour">5:30 م</div>
                   <div class="hour">5:30 م</div>
                 </div>
                 <div class="week">
-                  <div class="day"><span>السبت</span> <span>5 يناير</span></div>
+                  <div class="day">
+                    <span>الثلاثاء</span> <span>8 يناير</span>
+                  </div>
                   <div class="hour dangr">5:30 م</div>
                   <div class="hour sucs">5:30 م</div>
                 </div>
                 <div class="week">
-                  <div class="day"><span>السبت</span> <span>5 يناير</span></div>
+                  <div class="day">
+                    <span>الاربع</span> <span>9 يناير</span>
+                  </div>
                   <div class="hour dangrs">5:30 م</div>
                   <div class="hour suc">5:30 م</div>
                 </div>
                 <div class="week">
-                  <div class="day"><span>السبت</span> <span>5 يناير</span></div>
+                  <div class="day">
+                    <span>الخميس</span> <span>10 يناير</span>
+                  </div>
                   <div class="hour dangrs">5:30 م</div>
                   <div class="hour suc">5:30 م</div>
                 </div>
                 <div class="week">
-                  <div class="day"><span>السبت</span> <span>5 يناير</span></div>
+                  <div class="day">
+                    <span>الجمعة</span> <span>11 يناير</span>
+                  </div>
                   <div class="hour x">عطلة</div>
                 </div>
               </div>
@@ -621,10 +631,12 @@ export default {
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
+            text-decoration: underline;
           }
           .area {
             text-align: center;
             .fh {
+              width: 80% !important;
               border: 2px #d9d9d9 solid;
               border-radius: 5px;
               background-color: #e3e3e3;

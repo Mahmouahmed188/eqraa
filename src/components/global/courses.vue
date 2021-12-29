@@ -57,7 +57,7 @@
         <div class="elshi">
           <div class="plan">
             <div class="head-4">
-              <p class="padding"><span> </span> د/محمد العريشي</p>
+              <p class="padding">د/محمد العريشي</p>
               <p class="padding"><span> </span> اللغه العربيه</p>
               <img src="" alt="" class="daa" />
             </div>
@@ -78,8 +78,8 @@
           </div>
           <div class="plan">
             <div class="head-5">
-              <p><span> </span> د/محمد العريشي</p>
-              <p><span> </span> اللغه العربيه</p>
+              <p class="padding"><span> </span> د/محمد العريشي</p>
+              <p class="padding"><span> </span> اللغه العربيه</p>
               <img src="" alt="" class="daa" />
             </div>
 
@@ -102,7 +102,7 @@
           <div class="plan">
             <div class="head-6">
               <p class="padding"><span> </span> د/محمد العريشي</p>
-              <p>class="padding"<span> </span> اللغه العربيه</p>
+              <p class="padding"><span> </span> اللغه العربيه</p>
               <img src="" alt="" class="daa" />
             </div>
             <div class="body-plan">
@@ -219,34 +219,70 @@ export default {
         background-image: url(../../../public/assets/img/images.jpeg);
         @extend %head;
 
-        padding-right: 10px;
+        .padding {
+          padding: 2px 10px 3px 0px;
+          background-color: #5555556e;
+          box-shadow: 1px 0px 11px 6px rgba(65, 65, 65, 0.515);
+          width: 150px;
+          border-radius: 5px;
+        }
       }
       .head-2 {
         background-image: url(../../../public/assets/img/images1.jpeg);
         @extend %head;
 
-        padding-right: 10px;
+        .padding {
+          padding: 2px 10px 3px 0px;
+          background-color: #5555556e;
+          box-shadow: 1px 0px 11px 6px rgba(65, 65, 65, 0.515);
+          width: 150px;
+          border-radius: 5px;
+        }
       }
       .head-3 {
         background-image: url(../../../public/assets/img/images3.jpeg);
         @extend %head;
 
-        padding-right: 10px;
+        .padding {
+          padding: 2px 10px 3px 0px;
+          background-color: #5555556e;
+          box-shadow: 1px 0px 11px 6px rgba(65, 65, 65, 0.515);
+          width: 150px;
+          border-radius: 5px;
+        }
       }
       .head-4 {
         background-image: url(../../../public/assets/img/images5.jpeg);
         @extend %head;
-        padding-right: 10px;
+        .padding {
+          padding: 2px 10px 3px 0px;
+          background-color: #5555556e;
+          box-shadow: 1px 0px 11px 6px rgba(65, 65, 65, 0.515);
+          width: 150px;
+          border-radius: 5px;
+        }
       }
       .head-5 {
         background-image: url(../../../public/assets/img/images2.jpeg);
         @extend %head;
-        padding-right: 10px;
+        .padding {
+          padding: 2px 10px 3px 0px;
+          background-color: #5555556e;
+          box-shadow: 1px 0px 11px 6px rgba(65, 65, 65, 0.515);
+          width: 150px;
+          border-radius: 5px;
+        }
       }
       .head-6 {
         background-image: url(../../../public/assets/img/images1.jpeg);
         @extend %head;
-        padding-right: 10px;
+        .padding {
+          padding: 2px 10px 3px 0px;
+          background-color: #5555556e;
+          box-shadow: 1px 0px 11px 6px rgba(65, 65, 65, 0.515);
+          width: 150px;
+          border-radius: 5px;
+        }
       }
 
       .body-plan {

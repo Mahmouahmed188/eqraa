@@ -1,8 +1,8 @@
 <template>
   <header>
     <nav class="container full-width">
-      <i class="fas fa-bars toggle-menu"></i>
-      <div class="mob-menu">
+      <i class="fas fa-bars toggle-menu" @click="show = !show"></i>
+      <div class="mob-menu" v-if="show">
         <i href="" class="log-me">
           <img
             src="../../../../public/assets/img/png/2.png"
@@ -15,7 +15,6 @@
           <i class="fas fa-home fab"> </i>
           <router-link to="/"> الرئيسية</router-link>
         </h4>
-
         <h4 class="cors">
           <router-link to="/AvailableCourses"> الكورسات المتاحة</router-link>
         </h4>
@@ -63,6 +62,7 @@ export default {
     return {
       language: "اللغة العربية",
       signUp: "سجل مجانا",
+      show: false,
     };
   },
 };
@@ -111,7 +111,6 @@ header {
       }
     }
     .mob-menu {
-      display: none;
       float: none;
       flex-direction: column;
       background-color: rgb(66, 81, 104);

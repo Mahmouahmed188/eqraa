@@ -3,7 +3,7 @@
     <cours-header />
     <page-header @btn-click="handleClick" />
     <app-footer />
-    <popup v-if="show" />
+    <popup @btn-click="handleClose" v-if="show" />
   </div>
 </template>
 <script>
@@ -23,15 +23,14 @@ export default {
   data() {
     return {
       show: false,
-      close: true,
     };
   },
   methods: {
     handleClick() {
       this.show = true;
     },
-    closeClick() {
-      this.close = true;
+    handleClose() {
+      this.show = false;
     },
   },
 };
