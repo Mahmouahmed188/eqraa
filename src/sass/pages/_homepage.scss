@@ -73,14 +73,15 @@
         text-align: center;
         align-content: center;
         height: 310px;
-        padding: 34px 34px;
+        padding: 34px;
         @media #{$maxMobile} {
           margin: auto;
-          padding: 33px 34px;
+          padding: 6px;
+          height: auto;
         }
         &:hover {
           color: #383842;
-          padding: 30px 30px;
+          padding: 30px;
           border: solid 4px $button-color;
           border-color: transparent $button-color transparent transparent;
           border-radius: 5px;
@@ -92,6 +93,10 @@
             ),
             webkit moz o ms
           );
+          @media #{$maxMobile} {
+            margin: auto;
+            padding: 2px;
+          }
         }
         &:hover:after {
           width: 100%;
@@ -177,8 +182,8 @@
       display: inline-flex;
       flex-direction: column;
       @media #{$maxMobile} {
-        width: 81%;
-        margin: 20px auto;
+        width: 90%;
+        margin: 10px auto;
       }
       %head {
         background-size: cover;
@@ -264,8 +269,11 @@
 }
 .icon-color {
   background: linear-gradient(170deg, $main-color, #00ffc8);
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 130px 0;
+  @media #{$maxSmall} {
+    flex-basis: 40%;
+    padding: 3px;
+  }
   .icon-flixe {
     display: flex;
     flex-wrap: wrap;
@@ -282,6 +290,7 @@
       border-left: solid 2px #fff;
       @media #{$maxSmall} {
         flex-basis: 40%;
+        padding: 3px;
       }
       @media #{$maxMobile} {
         flex-basis: 60%;
@@ -319,7 +328,9 @@
   min-height: 99vh;
   padding-top: 100px;
   padding-bottom: 90px;
-
+  @media #{$maxSmall} {
+    padding: 10px 0;
+  }
   .cont-blok {
     display: flex;
     flex-wrap: wrap;

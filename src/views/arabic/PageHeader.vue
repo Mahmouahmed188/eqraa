@@ -500,11 +500,19 @@ export default {
             border-radius: 5px;
             padding: 10px 0;
             margin-top: 20px;
-
+            @media (max-width: 767px) {
+              display: block;
+              overflow: scroll;
+              height: 300px;
+            }
             .week {
               text-align: center;
               flex: 1;
-
+              @media (max-width: 767px) {
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+              }
               .day {
                 font-size: 12px;
                 margin-bottom: 15px;
@@ -525,6 +533,10 @@ export default {
                 color: #555;
                 margin-bottom: 15px;
                 margin-left: 10px;
+                @media (max-width: 767px) {
+                  margin-bottom: 35px;
+                  padding: 0 10px;
+                }
               }
 
               .dangrs {
@@ -553,6 +565,10 @@ export default {
                 padding: 24px 0px;
                 border-radius: 5px px;
                 background-color: #d5d5d5;
+                @media (max-width: 767px) {
+                  padding: 24px;
+                  margin: 0px;
+                }
               }
             }
           }

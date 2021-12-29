@@ -23,11 +23,15 @@ export default {
   data() {
     return {
       show: false,
+      close: true,
     };
   },
   methods: {
     handleClick() {
       this.show = true;
+    },
+    closeClick() {
+      this.close = true;
     },
   },
 };

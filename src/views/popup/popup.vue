@@ -1,8 +1,10 @@
 <template>
-  <div class="popup-overlay">
+  <div id="myModal" class="popup-overlay">
     <div>
-      <div id="myModal" class="container all">
-        <button id="myBtn" class="view-modal">&times;</button>
+      <div class="container all">
+        <button id="myBtn" class="close view-modal" @btn-click="closeClick">
+          &times;
+        </button>
         <div class="popup">
           <div class="right-popup">
             <div class="cont">
@@ -43,7 +45,7 @@
                 <p>Add file</p>
               </div>
             </div>
-            <div class="close"><i class="uil uil-times"></i></div>
+            <!-- <div class="close"><i class="uil uil-times"></i></div> -->
           </div>
           <div class="content">
             <h3 class="sign">الاشتراك ف الدورة</h3>
@@ -108,7 +110,7 @@
               <label for="">اشتراك لشخص اخر</label>
               <div class="butt">
                 <button class="hash">اشتراك</button>
-                <button class="Close">اغلاق</button>
+                <button class="close">اغلاق</button>
               </div>
             </div>
           </div>
@@ -133,6 +135,7 @@ export default {
 
     span.onclick = function () {
       modal.style.display = "none";
+      modal.style.background = "rgba(0, 0, 0, 0)";
     };
 
     window.onclick = function (event) {
@@ -140,6 +143,9 @@ export default {
         modal.style.display = "none";
       }
     };
+  },
+  closeClick() {
+    this.$emit("btn-click");
   },
 };
 // document.querySelector(".view-modal").onclick = () => {
@@ -288,7 +294,7 @@ export default {
             transition: 0.3s;
             width: 200px;
           }
-          .Close {
+          .close {
             color: red;
             border: none;
             background-color: #fff;

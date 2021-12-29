@@ -64,6 +64,7 @@ export default {
       padding-bottom: 40px;
       @media (max-width: 767px) {
         width: 100%;
+        padding-bottom: 0px;
       }
       .plan {
         background-color: #fff;
@@ -84,6 +85,7 @@ export default {
           overflow: auto;
         }
         .head-1 {
+          height: 210px;
           @extend %head;
           .action {
             position: relative;
@@ -96,12 +98,19 @@ export default {
             border-radius: 3px;
           }
           .padding {
-            padding-right: 10px;
+            padding: 2px 10px 3px 0px;
+            background-color: #5555556e;
+            box-shadow: 1px 0px 11px 6px rgba(65, 65, 65, 0.515);
+            width: 150px;
+            border-radius: 5px;
           }
         }
         .body-plan {
           text-align: center;
           padding: 30px;
+          @media (max-width: 767px) {
+            padding: 0 10px;
+          }
           .non {
             text-decoration: none;
           }
@@ -143,6 +152,9 @@ export default {
           border-top: solid 1px #ccc;
           padding: 15px;
           overflow: auto;
+          @media (max-width: 767px) {
+            padding: 5px 10px;
+          }
           .fr {
             float: right;
           }

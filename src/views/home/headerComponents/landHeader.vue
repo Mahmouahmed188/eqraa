@@ -57,6 +57,9 @@ export default {
     padding: 50px;
     color: white;
     text-align: center;
+    @media (max-width: 767px) {
+      padding: 5px;
+    }
     .search {
       .searchTerm {
         width: 450px;
@@ -72,7 +75,7 @@ export default {
         }
       }
       .link-d {
-        width: 88%;
+        width: 95%;
         display: flex;
         justify-content: center;
         @media (max-width: 767px) {

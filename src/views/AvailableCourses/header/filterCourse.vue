@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     handleChange(e) {
-      const selectedValue = e.targevt.value;
+      const selectedValue = e.target.value;
 
       console.log("selectedValue", selectedValue);
 

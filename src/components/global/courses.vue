@@ -18,10 +18,10 @@
           <div class="elshi">
             <div class="plan" v-for="cors in courses" :key="cors.id">
               <div class="head-1">
-                <p>
+                <p class="padding">
                   {{ cors.name }}
                 </p>
-                <p>{{ cors.language }}</p>
+                <p class="padding">{{ cors.language }}</p>
                 <img src="" alt="" class="daa" />
               </div>
               <div class="body-plan">
@@ -57,8 +57,8 @@
         <div class="elshi">
           <div class="plan">
             <div class="head-4">
-              <p><span> </span> د/محمد العريشي</p>
-              <p><span> </span> اللغه العربيه</p>
+              <p class="padding"><span> </span> د/محمد العريشي</p>
+              <p class="padding"><span> </span> اللغه العربيه</p>
               <img src="" alt="" class="daa" />
             </div>
             <div class="body-plan">
@@ -82,13 +82,12 @@
               <p><span> </span> اللغه العربيه</p>
               <img src="" alt="" class="daa" />
             </div>
-            
+
             <div class="body-plan">
               <h3>استخدام الاسماء الخمسه في حالات الاعراب الثلاثه</h3>
               <div class="star">
-            
                 <a href="#" class="fas fa-star"></a>
-               
+
                 <a href="#" class="fas fa-star s2"></a>
                 <a href="#" class="fas fa-star s3"></a>
                 <a href="#" class="fas fa-star s4"></a>
@@ -102,8 +101,8 @@
           </div>
           <div class="plan">
             <div class="head-6">
-              <p><span> </span> د/محمد العريشي</p>
-              <p><span> </span> اللغه العربيه</p>
+              <p class="padding"><span> </span> د/محمد العريشي</p>
+              <p>class="padding"<span> </span> اللغه العربيه</p>
               <img src="" alt="" class="daa" />
             </div>
             <div class="body-plan">
@@ -205,8 +204,8 @@ export default {
       display: inline-flex;
       flex-direction: column;
       @media (max-width: 767px) {
-        width: 81%;
-        margin: 20px auto;
+        width: 90%;
+        margin: 10px auto;
       }
       %head {
         background-size: cover;
@@ -219,31 +218,43 @@ export default {
       .head-1 {
         background-image: url(../../../public/assets/img/images.jpeg);
         @extend %head;
+
+        padding-right: 10px;
       }
       .head-2 {
         background-image: url(../../../public/assets/img/images1.jpeg);
         @extend %head;
+
+        padding-right: 10px;
       }
       .head-3 {
         background-image: url(../../../public/assets/img/images3.jpeg);
         @extend %head;
+
+        padding-right: 10px;
       }
       .head-4 {
         background-image: url(../../../public/assets/img/images5.jpeg);
         @extend %head;
+        padding-right: 10px;
       }
       .head-5 {
         background-image: url(../../../public/assets/img/images2.jpeg);
         @extend %head;
+        padding-right: 10px;
       }
       .head-6 {
         background-image: url(../../../public/assets/img/images1.jpeg);
         @extend %head;
+        padding-right: 10px;
       }
 
       .body-plan {
         text-align: center;
         padding: 30px;
+        @media (max-width: 767px) {
+          padding: 0 10px;
+        }
         .star {
           text-align: center;
           direction: rtl;
@@ -279,6 +290,9 @@ export default {
       .foot {
         border-top: solid 1px #ccc;
         padding: 15px;
+        @media (max-width: 767px) {
+          padding: 4px 10px;
+        }
         .fr {
           float: right;
         }
